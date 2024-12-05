@@ -4,85 +4,42 @@ import { Link } from 'react-router-dom';
 import Layout from '../components/Layout/Layout';
 import Divider from '../components/Divider/Divider';
 
-const Profile = (): JSX.Element => (
+const LandingPage = (): JSX.Element => (
   <Layout>
     <Divider />
 
-    <h1 className='title'>Profile</h1>
+    {/* Page Title and Description */}
+    <h1 className="title">Welcome to CreditWise</h1>
+    <p className="description">
+      Assess your creditworthiness in seconds with our easy-to-use tool. Enter your financial details to predict your credit score category.
+    </p>
 
-    <div className='account-photo' style={{ backgroundImage: `url("images/profile.jpg")` }} />
+    {/* CTA Button to Start Prediction */}
+    <div className="cta-container">
+      <Link to="/savings" className="cta-button">Get Started</Link>  {/* Link to Savings Page */}
+    </div>
 
-    <div className='center'>
-      <h2>Cenk SARI</h2>
-      <p className='flex flex-v-center flex-h-center'>
-        @cenksari &nbsp;
-        <span className='material-symbols-outlined'>qr_code</span>
-      </p>
+    {/* Button to Add Page (Prediction Form) */}
+    <div className="cta-container">
+      <Link to="/add" className="cta-button">Prediction Form Page</Link>  {/* Link to Add.tsx */}
     </div>
 
     <Divider />
 
-    <div className='account'>
-      <Link to='/profile' className='flex flex-v-center'>
-        <span className='material-symbols-outlined'>support</span>
-        Help
-      </Link>
-      <Link to='/profile' className='flex flex-v-center'>
-        <span className='material-symbols-outlined'>account_circle</span>
-        Account
-      </Link>
-      <Link to='/profile' className='flex flex-v-center'>
-        <span className='material-symbols-outlined'>school</span>
-        Learn
-      </Link>
-      <Link to='/profile' className='flex flex-v-center flex-space-between'>
-        <div className='flex flex-v-center flex-h-center'>
-          <span className='material-symbols-outlined'>inbox</span>
-          Inbox
-        </div>
-        <span className='notification flex flex-v-center flex-h-center'>4</span>
-      </Link>
+    {/* Features or Benefits */}
+    <div className="features">
+      <h2>Why Use CreditWise?</h2>
+      <ul>
+        <li>Simple and fast credit score prediction</li>
+        <li>Personalized financial insights</li>
+        <li>Completely secure and private</li>
+      </ul>
     </div>
 
     <Divider />
 
-    <div className='account'>
-      <Link to='/profile' className='flex flex-v-center'>
-        <span className='material-symbols-outlined'>verified_user</span>
-        Security &amp; privacy
-      </Link>
-      <Link to='/profile' className='flex flex-v-center'>
-        <span className='material-symbols-outlined'>notifications</span>
-        Notification settings
-      </Link>
-      <Link to='/profile' className='flex flex-v-center'>
-        <span className='material-symbols-outlined'>contrast</span>
-        Appearance
-      </Link>
-      <Link to='/profile' className='flex flex-v-center'>
-        <span className='material-symbols-outlined'>grade</span>
-        New features
-      </Link>
-    </div>
-
-    <Divider />
-
-    <div className='account'>
-      <Link to='/profile' className='flex flex-v-center'>
-        <span className='material-symbols-outlined'>token</span>
-        About us
-      </Link>
-      <Link to='/profile' className='flex flex-v-center'>
-        <span className='material-symbols-outlined'>power_settings_new</span>
-        Sign out
-      </Link>
-    </div>
-
-    <Divider />
-
-    <footer className='center no-select'>
-      v.1.0.12
-      <br />
+    <footer className="center no-select">
+      v.1.0.12<br />
       Banking Ltd.
     </footer>
 
@@ -90,4 +47,4 @@ const Profile = (): JSX.Element => (
   </Layout>
 );
 
-export default Profile;
+export default LandingPage;

@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-
 import { Link } from 'react-router-dom';
 
 const Header = (): JSX.Element => {
@@ -29,12 +28,14 @@ const Header = (): JSX.Element => {
         </div>
       </div>
       <div className='header-buttons flex flex-1 flex-v-center flex-end'>
+        {/* 
         <Link to='/transactions' className='header-button flex flex-v-center flex-h-center'>
           <span className='material-symbols-outlined'>equalizer</span>
         </Link>
         <Link to='/cards' className='header-button flex flex-v-center flex-h-center'>
           <span className='material-symbols-outlined'>credit_card</span>
         </Link>
+        */}
       </div>
     </header>
   );
