@@ -14,18 +14,6 @@ const LandingPage = (): JSX.Element => (
       Assess your creditworthiness in seconds with our easy-to-use tool. Enter your financial details to predict your credit score category.
     </p>
 
-    {/* CTA Button to Start Prediction */}
-    <div className="cta-container">
-      <Link to="/savings" className="cta-button">Get Started</Link>  {/* Link to Savings Page */}
-    </div>
-
-    {/* Button to Add Page (Prediction Form) */}
-    <div className="cta-container">
-      <Link to="/add" className="cta-button">Prediction Form Page</Link>  {/* Link to Add.tsx */}
-    </div>
-
-    <Divider />
-
     {/* Features or Benefits */}
     <div className="features">
       <h2>Why Use CreditWise?</h2>
